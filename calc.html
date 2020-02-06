@@ -450,11 +450,13 @@ for(i=1;i<=count;i++)
 {
     if(i==count)
     {
+	console.log("Uno")
         cx+=(v[i][1]+v[1][1])*((v[i][1]*v[1][2])-(v[1][1]*v[i][2]));
         cy+=(v[i][2]+v[1][2])*((v[i][1]*v[1][2])-(v[1][1]*v[i][2]));
     }
     else
     {
+	console.log("Dos")
         cx+=(v[i][1]+v[i+1][1])*((v[i][1]*v[i+1][2])-(v[i+1][1]*v[i][2]));
         cy+=(v[i][2]+v[i+1][2])*((v[i][1]*v[i+1][2])-(v[i+1][1]*v[i][2]));
     }
@@ -476,7 +478,6 @@ document.getElementById('y').value=cy;
 }
 else{
     alert('Enter All Fields');
-    console.log("log:Fields")
     document.getElementById('x').value='';
     document.getElementById('y').value='';
 }
