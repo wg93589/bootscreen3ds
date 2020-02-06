@@ -450,13 +450,17 @@ for(i=1;i<=count;i++)
 {
     if(i==count)
     {
-	console.log("Uno")
+	console.log("final")
+	console.log(cx)
+	console.log(cy)
         cx+=(v[i][1]+v[1][1])*((v[i][1]*v[1][2])-(v[1][1]*v[i][2]));
         cy+=(v[i][2]+v[1][2])*((v[i][1]*v[1][2])-(v[1][1]*v[i][2]));
     }
     else
     {
-	console.log("Dos")
+	console.log(i)
+	console.log(cx)
+	console.log(cy)
         cx+=(v[i][1]+v[i+1][1])*((v[i][1]*v[i+1][2])-(v[i+1][1]*v[i][2]));
         cy+=(v[i][2]+v[i+1][2])*((v[i][1]*v[i+1][2])-(v[i+1][1]*v[i][2]));
     }
